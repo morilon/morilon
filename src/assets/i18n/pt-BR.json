@@ -1,3 +1,11 @@
 {
-    "TEST": "TESTE EM PT-BR"
+    "Navbar": {
+        "About": "Sobre",
+        "Experience": "Experiência",
+        "Education": "Formação",
+        "Skills": "Habilidades",
+        "Certifications": "Certificações",
+        "Interests": "Interesses",
+        "Test": "TESTES"
+    }
 }

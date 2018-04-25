@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 @NgModule({
   imports: [
     CommonModule,
+    TranslateModule.forChild()
   ],
   declarations: [
     NavbarComponent

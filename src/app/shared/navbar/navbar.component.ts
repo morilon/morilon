@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+
+import { Navbar } from '@models/navbar';
+
+import { LanguageService } from '@services/language.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,18 +10,39 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  navbar: Navbar;
 
-  constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en-US');
-    translate.use('en-US');
-  }
+  constructor(
+    private langService: LanguageService
+  ) { }
 
   ngOnInit() {
+    this.navbar = Navbar.create(
+      '/assets/images/batman.jpg',
+      'Murilo Almeida',
+      [
+        { key: 'Navbar.About', uri: '#about' },
+        { key: 'Navbar.Experience', uri: '#experience' },
+        { key: 'Navbar.Education', uri: '#education' },
+        { key: 'Navbar.Skills', uri: '#skills' },
+        { key: 'Navbar.Certifications', uri: '#certifications' },
+        { key: 'Navbar.Interests', uri: '#interests' }
+      ]
+    );
 
+    this.translate();
+    this.langService.onReload.subscribe(this.translate.bind(this));
   }
 
-  changeLang(lang: string): void {
-    this.translate.use(lang);
+  private translate(): void {
+    this.langService
+      .translate.get(this.navbar.getKeys())
+      .subscribe(val => this.navbar.items.forEach(i => i.text = val[i.key]));
   }
 
+  reloadWith(lang: string): void {
+    this.langService.reload(lang);
+  }
 }
+
+

@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
 
 import { SharedModule } from './shared/shared.module';
 import { SectionsModule } from './sections/sections.module';
-
+import { CoreModule } from './core/core.module';
 
 const routes: Routes = [
   { path: '**', component: AppComponent }
@@ -33,7 +33,7 @@ const routes: Routes = [
     }),
     RouterModule.forRoot(routes, { useHash: false }),
     SectionsModule,
-
+    CoreModule,
     SharedModule
   ],
   providers: [],

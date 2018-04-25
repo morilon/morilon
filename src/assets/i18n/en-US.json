@@ -1,3 +1,11 @@
 {
-    "TEST": "TEST IN EN-US"
+    "Navbar": {
+        "About": "About",
+        "Experience": "Experience",
+        "Education": "Education",
+        "Skills": "Skills",
+        "Certifications": "Certifications",
+        "Interests": "Interests",
+        "Test": "Test"
+    }
 }
