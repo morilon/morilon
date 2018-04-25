@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+.bg-primary {
+    background-color: #013243 !important;
+}
+
+.text-primary {
+    color: #013243 !important;
+}
+
+a {
+    color: #34495E;
+}
+
+a:active, a:focus, a:hover {
+    color: #446CB3;
+}

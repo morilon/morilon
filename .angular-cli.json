@@ -19,12 +19,13 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css",
         "../node_modules/startbootstrap-resume/vendor/bootstrap/css/bootstrap.min.css",
         "../node_modules/startbootstrap-resume/vendor/font-awesome/css/font-awesome.min.css",
         "../node_modules/startbootstrap-resume/vendor/devicons/css/devicons.min.css",
         "../node_modules/startbootstrap-resume/vendor/simple-line-icons/css/simple-line-icons.css",
-        "../node_modules/startbootstrap-resume/css/resume.min.css"
+        "../node_modules/startbootstrap-resume/css/resume.min.css",
+        "../node_modules/flag-icon-css/css/flag-icon.min.css",
+        "styles.css"
       ],
       "scripts": [
         "../node_modules/startbootstrap-resume/vendor/jquery/jquery.min.js",
