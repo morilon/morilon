@@ -10,5 +10,25 @@
     "About": {
         "Country": "BRASIL",
         "Description": "Sou desenvolvedor de software, tenho uns 5 anos de experiência desenvolvendo e implementando aplicações .NET e web apps modernas. Eu acredito que com o Scrum, podemos entregar uma solução mais valiosa para o cliente, ao invés de apenas linhas de código, que convenhamos, qualquer um pode escrever. Na real, o legal é ser capaz de entregar algo que eles consigam se identificar, não apenas softwware. Ser apaixonado pelo que faço me faz procurar sempre a excelência em tudo que desenvolvo."
+    },
+    "Experience": {
+        "SectionTitle": "Experiência",
+        "Jobs": {
+            "Title": "Desenvolvedor de Software",
+            "Description": {
+                "0": "trabalhando na actminds",
+                "1": "trabalhando na programmers",
+                "2": "trabalhando na viceri",
+                "3": "trabalhando na goldsoft",
+                "4": "trabalhando na finamax"
+            },
+            "Date": {
+                "0": "Setembro de 2016 - Presente",
+                "1": "Setembro de 2016 - Presente",
+                "2": "Julho de 2016 - Setembro de 2016",
+                "3": "Setembro de 2014 - Junho de 2015",
+                "4": "Fevereiro de 2013 - Maio de 2014"
+            }
+        }
     }
 }
