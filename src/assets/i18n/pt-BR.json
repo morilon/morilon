@@ -16,18 +16,16 @@
         "Jobs": {
             "Title": "Desenvolvedor de Software",
             "Description": {
-                "0": "trabalhando na actminds",
-                "1": "trabalhando na programmers",
-                "2": "trabalhando na viceri",
-                "3": "trabalhando na goldsoft",
-                "4": "trabalhando na finamax"
+                "0": "Aqui é onde começa a diversão. Comecei a trabalhar com Agile/Scrum em um cliente americano, com GIT, SPA's em angular, .NET APIs, .NET Core, EF, NHibernate, NodeJS, NServiceBus, Ruby/Rake, CI/CD, Jenkins. Tive a experiência de viajar aos EUA para trabalhar junto com o cliente, isso me ajudou a conhecer mais o scrum e os times ágeis. É complicado, mas foi onde eu cresci mais, pessoal e profissionalmente. Tem sido uma ótima experiência.",
+                "1": "Continuei trabalhando com web apps, na maior parte, tive alguns projetos com webforms, java, e asp. Sim, aquele antigão, mas também tive a chance de começar um projeto do zero, um grande projeto com MVC, APIs, Gulp/GRunt, NPM CI/CD, Micro-ORM que criamos.",
+                "2": "Foquei mais em web applications, trabalhei com dbs Oracle e MySQL, ASP.NET MVC/API, JQUery, Ajax e mantive TFS como ferramenta principal de source control.",
+                "3": "Aqui é onde comecei minha carreira em TI, recém saído de colégio técnico, não tive muita experiência com desenvolvimento, comecei trabalhando com ASP.NET Web Forms e Windows Forms, usando SQL Server, migrando aplicações Delphi para C#. Tive o primeiro contato com MVC, Entity Framework e NHibernate e TFS como ferramenta de source control."
             },
             "Date": {
                 "0": "Setembro de 2016 - Presente",
-                "1": "Setembro de 2016 - Presente",
-                "2": "Julho de 2016 - Setembro de 2016",
-                "3": "Setembro de 2014 - Junho de 2015",
-                "4": "Fevereiro de 2013 - Maio de 2014"
+                "1": "Julho de 2016 - Setembro de 2016",
+                "2": "Setembro de 2014 - Junho de 2015",
+                "3": "Fevereiro de 2013 - Maio de 2014"
             }
         }
     }

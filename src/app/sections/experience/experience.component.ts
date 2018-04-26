@@ -24,12 +24,10 @@ export class ExperienceComponent implements OnInit {
       'Experience.Jobs.Description.1',
       'Experience.Jobs.Description.2',
       'Experience.Jobs.Description.3',
-      'Experience.Jobs.Description.4',
       'Experience.Jobs.Date.0',
       'Experience.Jobs.Date.1',
       'Experience.Jobs.Date.2',
-      'Experience.Jobs.Date.3',
-      'Experience.Jobs.Date.4'
+      'Experience.Jobs.Date.3'
     ]
   }
   constructor(private langService: LanguageService) { }
@@ -38,10 +36,9 @@ export class ExperienceComponent implements OnInit {
     this.experience = {
       jobs: [
         Job.create(0, 'Actminds, Inc', 'actminds.com'),
-        Job.create(1, `Programmer's Informática`, 'programmers.com.br'),
-        Job.create(2, 'Grupo Viceri', 'viceri.com.br'),
-        Job.create(3, 'Goldsoft', 'goldsoft.com.br'),
-        Job.create(4, 'Finamax CFI', 'finamax.com.br')
+        Job.create(1, 'Grupo Viceri', 'viceri.com.br'),
+        Job.create(2, 'Goldsoft', 'goldsoft.com.br'),
+        Job.create(3, 'Finamax CFI', 'finamax.com.br')
       ]
     } as Experience
     this.translate()

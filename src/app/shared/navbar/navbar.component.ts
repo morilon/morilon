@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
-import { Navbar } from '@models/navbar';
+import { Navbar } from '@models/navbar'
 
-import { LanguageService } from '@services/language.service';
+import { LanguageService } from '@services/language.service'
 
 @Component({
   selector: 'app-navbar',
@@ -10,7 +10,7 @@ import { LanguageService } from '@services/language.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  navbar: Navbar;
+  navbar: Navbar
 
   constructor(
     private langService: LanguageService
@@ -28,21 +28,19 @@ export class NavbarComponent implements OnInit {
         { key: 'Navbar.Certifications', uri: '#certifications' },
         { key: 'Navbar.Interests', uri: '#interests' }
       ]
-    );
+    )
 
-    this.translate();
-    this.langService.onReload.subscribe(this.translate.bind(this));
+    this.translate()
+    this.langService.onReload.subscribe(this.translate.bind(this))
+  }
+
+  reloadWith(lang: string): void {
+    this.langService.reload(lang)
   }
 
   private translate(): void {
     this.langService
       .translate.get(this.navbar.getKeys())
-      .subscribe(val => this.navbar.items.forEach(t => t.text = val[t.key]));
-  }
-
-  reloadWith(lang: string): void {
-    this.langService.reload(lang);
+      .subscribe(val => this.navbar.items.forEach(t => t.text = val[t.key]))
   }
 }
-
-
