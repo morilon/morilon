@@ -1,7 +1,7 @@
 import { Job } from '@models/job'
 
 export class Experience {
-    sectionTitle: string
+    title: string
     jobTitle: string
     jobs: Job[]
 

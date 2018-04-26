@@ -13,32 +13,20 @@ import { Job } from '@models/job'
 export class ExperienceComponent implements OnInit {
   experience: Experience
   private keys = {
-    sectionTitle: 'Experience.SectionTitle',
-    title: 'Experience.Jobs.Title',
-    descriptionOrder: 'Experience.Jobs.Description.',
-    dateOrder: 'Experience.Jobs.Date.',
-    translationKeys: [
-      'Experience.SectionTitle',
-      'Experience.Jobs.Title',
-      'Experience.Jobs.Description.0',
-      'Experience.Jobs.Description.1',
-      'Experience.Jobs.Description.2',
-      'Experience.Jobs.Description.3',
-      'Experience.Jobs.Date.0',
-      'Experience.Jobs.Date.1',
-      'Experience.Jobs.Date.2',
-      'Experience.Jobs.Date.3'
-    ]
+    title: 'Experience.Title',
+    jobTitle: 'Experience.Jobs.Title',
+    descriptions: 'Experience.Jobs.Descriptions',
+    dates: 'Experience.Jobs.Dates'
   }
   constructor(private langService: LanguageService) { }
 
   ngOnInit() {
     this.experience = {
       jobs: [
-        Job.create(0, 'Actminds, Inc', 'actminds.com'),
-        Job.create(1, 'Grupo Viceri', 'viceri.com.br'),
-        Job.create(2, 'Goldsoft', 'goldsoft.com.br'),
-        Job.create(3, 'Finamax CFI', 'finamax.com.br')
+        Job.create('Actminds, Inc', 'actminds.com'),
+        Job.create('Grupo Viceri', 'viceri.com.br'),
+        Job.create('Goldsoft', 'goldsoft.com.br'),
+        Job.create('Finamax CFI', 'finamax.com.br')
       ]
     } as Experience
     this.translate()
@@ -46,13 +34,15 @@ export class ExperienceComponent implements OnInit {
   }
 
   translate(): void {
-    this.langService.translate.get(this.keys.translationKeys)
+    this.langService.translate.get([this.keys.title, this.keys.jobTitle, this.keys.descriptions, this.keys.dates])
       .subscribe(val => {
-        this.experience.sectionTitle = val[this.keys.sectionTitle]
-        this.experience.jobTitle = val[this.keys.title]
+        this.experience.title = val[this.keys.title]
+        this.experience.jobTitle = val[this.keys.jobTitle]
+        const descs = val[`${this.keys.descriptions}`]
+        const dates = val[`${this.keys.dates}`]
         this.experience.jobs.forEach((job, i) => {
-          this.experience.jobs[i].description = val[`${this.keys.descriptionOrder}${i}`]
-          this.experience.jobs[i].date = val[`${this.keys.dateOrder}${i}`]
+          this.experience.jobs[i].description = descs[i]
+          this.experience.jobs[i].date = dates[i]
         })
       })
   }

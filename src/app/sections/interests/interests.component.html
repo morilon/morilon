@@ -1,19 +1,8 @@
 <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
   <div class="my-auto">
-    <h2 class="mb-5">Interests</h2>
-    <p>
-      Let's make this quick; I'm 28, married, no kids, two cats. I like to; read, watch movies, play videogames, travel, going
-      out with friends, having nice meals, concerts, music... some sports. I don't know, normal stuff I guess.
-    </p>
-    <p>
-      Being a developer is something that I love, even though it took me years to finally find myself doing this. I tried a few
-      other things before, didn't went well, I always felt that something was missing, not anymore. It's like that saying;
-      Do what you want and you... no wait, it was... Love what you do and... it's not that either, nevermind, I don't remember,
-      but it's awesome!
-    </p>
-    <p class="mb-0">
-      Some say I'm grumpy in a funny way. Most of my friends like me, I say "most", because you never know. and I have just a few,
-      so, that might mean something.
+    <h2 class="mb-5">{{ interests.title }}</h2>
+    <p *ngFor="let line of interests.lines">
+      {{ line }}
     </p>
   </div>
 </section>

@@ -10,6 +10,13 @@ a {
     color: #34495E;
 }
 
-a:active, a:focus, a:hover {
+a:active,
+a:focus,
+a:hover {
     color: #446CB3;
+}
+
+.subheading.l3 {
+    font-weight: 400;
+    font-size: 1.2rem;
 }

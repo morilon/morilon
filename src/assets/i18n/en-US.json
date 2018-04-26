@@ -12,21 +12,34 @@
         "Description": "I’m a software developer with over 5 years of experience developing and implementing .NET applications and modern web apps. I believe that through Scrum we are able to deliver a solution valuable to the client rather than lines of code, which, pretty much anyone can write. The real deal is being able to deliver something that they can relate to, not just software. Being passionate about what I do makes me pursuit excellence on everything I develop."
     },
     "Experience": {
-        "SectionTitle": "Experience",
+        "Title": "Experience",
         "Jobs": {
             "Title": "Software Developer",
-            "Description": {
-                "0": "Here is where the fun began; I started working with Agile/Scrum on a US based client, using GIT, SPAs with Angular, .NET APIs, .NET Core, EF, Nhibernate, NodeJS, NServiceBus, Ruby/Rake, CI/CD, Jenkins. Had the experience of travelling to US in order to work along with client, this helped me to understand more about scrum and agile teams, it's a rollercoaster but it's where I grew up the most, personally and professionally. It has been a great experience.",
-                "1": "I Kept working, mostly, with web apps, it had a few projects with WebForms, Java and ASP, yes, that old one, but I also had the chance to start a new project from the ground zero, a big project using MVC, APIs, Gulp/Grunt, NPM, CI/CD, Micro-ORM that we created.",
-                "2": "Here I focused on web applications more, I worked with Oracle and MySQL databases, ASP.NET MVC/API, jQuery, Ajax and kept using TFS as main source control tool.",
-                "3": "It's where I started my it career, fresh out of tech school, didn't have actual experience with software development, I started working with ASP.NET Web Forms and Windows Forms, both using SQL Server, migrating Delphi based applications to C#. Also had a first contact with MVC, Entity Framework and NHibernate and TFS as source control tool."
-            },
-            "Date": {
-                "0": "September 2016 - Present",
-                "1": "July 2016 - September 2016",
-                "2": "September 2014 - June 2015",
-                "3": "February 2013 - May 2014"
-            }
+            "Descriptions": [
+                "Here is where the fun began; I started working with Agile/Scrum on a US based client, using GIT, SPAs with Angular, .NET APIs, .NET Core, EF, Nhibernate, NodeJS, NServiceBus, Ruby/Rake, CI/CD, Jenkins. Had the experience of travelling to US in order to work along with client, this helped me to understand more about scrum and agile teams, it's a rollercoaster but it's where I grew up the most, personally and professionally. It has been a great experience.",
+                "I Kept working, mostly, with web apps, it had a few projects with WebForms, Java and ASP, yes, that old one, but I also had the chance to start a new project from the ground zero, a big project using MVC, APIs, Gulp/Grunt, NPM, CI/CD, Micro-ORM that we created.",
+                "Here I focused on web applications more, I worked with Oracle and MySQL databases, ASP.NET MVC/API, jQuery, Ajax and kept using TFS as main source control tool.",
+                "It's where I started my it career, fresh out of tech school, didn't have actual experience with software development, I started working with ASP.NET Web Forms and Windows Forms, both using SQL Server, migrating Delphi based applications to C#. Also had a first contact with MVC, Entity Framework and NHibernate and TFS as source control tool."
+            ],
+            "Dates": [
+                "September 2016 - Present",
+                "July 2016 - September 2016",
+                "September 2014 - June 2015",
+                "February 2013 - May 2014"
+            ]
         }
+    },
+    "Education": {
+        "Title": "Academic Formation",
+        "TADS": "Systems Analysis and Development Course",
+        "Tech": "IT Technical School"
+    },
+    "Interests": {
+        "Title": "Interests",
+        "Lines": [
+            "Let's make this quick; I'm 28, married, no kids, two cats. I like to; read, watch movies, gaming, to travel, going out with friends, nice meals, going to concerts, listen to music and a lot of other things that only I enjoy, or not, I don't know.", 
+            "Being a developer is something that I love, even though it took me years to finally find myself doing this. I tried a few other things before, didn't went well, I always felt that something was missing, not anymore. It's like that saying; Do what you want and you... no wait, it was... Love what you do and... it's not that either, nevermind, I don't remember, but it's awesome!", 
+            "Some say I'm grumpy in a funny way. Most of my friends like me, I say \"most\", because you never know, and I have just a few, so, this might mean something. ;)"
+        ]
     }
 }

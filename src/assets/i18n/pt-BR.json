@@ -12,21 +12,34 @@
         "Description": "Sou desenvolvedor de software, tenho uns 5 anos de experiência desenvolvendo e implementando aplicações .NET e web apps modernas. Eu acredito que com o Scrum, podemos entregar uma solução mais valiosa para o cliente, ao invés de apenas linhas de código, que convenhamos, qualquer um pode escrever. Na real, o legal é ser capaz de entregar algo que eles consigam se identificar, não apenas softwware. Ser apaixonado pelo que faço me faz procurar sempre a excelência em tudo que desenvolvo."
     },
     "Experience": {
-        "SectionTitle": "Experiência",
+        "Title": "Experiência",
         "Jobs": {
             "Title": "Desenvolvedor de Software",
-            "Description": {
-                "0": "Aqui é onde começa a diversão. Comecei a trabalhar com Agile/Scrum em um cliente americano, com GIT, SPA's em angular, .NET APIs, .NET Core, EF, NHibernate, NodeJS, NServiceBus, Ruby/Rake, CI/CD, Jenkins. Tive a experiência de viajar aos EUA para trabalhar junto com o cliente, isso me ajudou a conhecer mais o scrum e os times ágeis. É complicado, mas foi onde eu cresci mais, pessoal e profissionalmente. Tem sido uma ótima experiência.",
-                "1": "Continuei trabalhando com web apps, na maior parte, tive alguns projetos com webforms, java, e asp. Sim, aquele antigão, mas também tive a chance de começar um projeto do zero, um grande projeto com MVC, APIs, Gulp/GRunt, NPM CI/CD, Micro-ORM que criamos.",
-                "2": "Foquei mais em web applications, trabalhei com dbs Oracle e MySQL, ASP.NET MVC/API, JQUery, Ajax e mantive TFS como ferramenta principal de source control.",
-                "3": "Aqui é onde comecei minha carreira em TI, recém saído de colégio técnico, não tive muita experiência com desenvolvimento, comecei trabalhando com ASP.NET Web Forms e Windows Forms, usando SQL Server, migrando aplicações Delphi para C#. Tive o primeiro contato com MVC, Entity Framework e NHibernate e TFS como ferramenta de source control."
-            },
-            "Date": {
-                "0": "Setembro de 2016 - Presente",
-                "1": "Julho de 2016 - Setembro de 2016",
-                "2": "Setembro de 2014 - Junho de 2015",
-                "3": "Fevereiro de 2013 - Maio de 2014"
-            }
+            "Descriptions": [
+                "Aqui é onde começa a diversão. Comecei a trabalhar com Agile/Scrum em um cliente americano, com GIT, SPA's em angular, .NET APIs, .NET Core, EF, NHibernate, NodeJS, NServiceBus, Ruby/Rake, CI/CD, Jenkins. Tive a experiência de viajar aos EUA para trabalhar junto com o cliente, isso me ajudou a conhecer mais o scrum e os times ágeis. É complicado, mas foi onde eu cresci mais, pessoal e profissionalmente. Tem sido uma ótima experiência.",
+                "Continuei trabalhando com web apps, na maior parte, tive alguns projetos com webforms, java, e asp. Sim, aquele antigão, mas também tive a chance de começar um projeto do zero, um grande projeto com MVC, APIs, Gulp/GRunt, NPM CI/CD, Micro-ORM que criamos.",
+                "Foquei mais em web applications, trabalhei com dbs Oracle e MySQL, ASP.NET MVC/API, JQUery, Ajax e mantive TFS como ferramenta principal de source control.",
+                "Aqui é onde comecei minha carreira em TI, recém saído de colégio técnico, não tive muita experiência com desenvolvimento, comecei trabalhando com ASP.NET Web Forms e Windows Forms, usando SQL Server, migrando aplicações Delphi para C#. Tive o primeiro contato com MVC, Entity Framework e NHibernate e TFS como ferramenta de source control."
+            ],
+            "Dates": [
+                "Setembro de 2016 - Presente",
+                "Julho de 2016 - Setembro de 2016",
+                "Setembro de 2014 - Junho de 2015",
+                "Fevereiro de 2013 - Maio de 2014"
+            ]
         }
+    },
+    "Education": {
+        "Title": "Formação Acadêmica",
+        "TADS": "Tec. Análise e Desenv. de Sistemas",
+        "Tech": "Técnico em Informática"
+    },
+    "Interests": {
+        "Title": "Interests",
+        "Lines": [
+            "Sejamos rápidos; Tenho 28 anos, casado, sem filhos e com dois gatos. Gosto de; ler, ver filmes, jogar, viajar, sair cozamigo, comidas boas, uns showzinhos, ouvir música e um monte de outras coisas que só eu vou achar legal, ou não, sei lá.", 
+            "Ser desenvolvedor é algo que eu adoro, mesmo tendo demorado para me achar fazendo isso. Tentei outras coisas, não rolou, sempre senti que faltava algo, não mais. É como aquele ditado; Faça o que você quer e..., não, espera, era; Ame o que você faz e..., não era isso também, sei lá, não lembro, mas é sensacional!",
+            "Dizem que sou rabugento de uma forma engraçada. A maioria dos meus amigos gosta de mim, e digo \"a maioria\" porque nunca se sabe, tenho só alguns, então, pode ser que... né. ;)"
+        ]
     }
 }

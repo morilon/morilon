@@ -1,7 +1,8 @@
 <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
   <div class="my-auto">
-    <h2 class="mb-5">{{ experience.sectionTitle }}</h2>
-    <div class="resume-item d-flex flex-column flex-md-row mb-5" *ngFor="let job of experience.jobs">
+    <h2 class="mb-5">{{ experience.title }}</h2>
+
+    <div class="resume-item d-flex flex-column flex-md-row mb-3" *ngFor="let job of experience.jobs">
       <div class="resume-content mr-auto">
         <h3 class="mb-0">{{ experience.jobTitle }}</h3>
         <div class="subheading mb-0">
@@ -11,5 +12,6 @@
         <p>{{ job.description }}</p>
       </div>
     </div>
+
   </div>
 </section>
