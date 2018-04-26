@@ -46,5 +46,10 @@
         "Title": "Certificações & Cursos",
         "CertsTitle": "Certificações",
         "ExamsTitle": "Cursos"
+    },
+    "Skills": {
+        "Title": "Habilidades",
+        "Languages": "Linguagens de Programação",
+        "Tools": "Ferramentas"
     }
 }

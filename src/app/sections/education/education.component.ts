@@ -23,7 +23,6 @@ export class EducationComponent implements OnInit {
   }
 
   translate(): void {
-    console.log(this.keys)
     this.langService.translate.get([this.keys.title, this.keys.tads, this.keys.tech])
       .subscribe(val => {
         this.education = {

@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common'
 
-import { TranslateModule } from '@ngx-translate/core';
-import { HttpClientModule } from '@angular/common/http';
+import { TranslateModule } from '@ngx-translate/core'
+import { HttpClientModule } from '@angular/common/http'
 
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './navbar/navbar.component'
 
 @NgModule({
   imports: [

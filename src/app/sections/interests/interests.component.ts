@@ -17,6 +17,7 @@ export class InterestsComponent implements OnInit {
   constructor(private langService: LanguageService) { }
 
   ngOnInit() {
+    this.interests = new Interests()
     this.translate()
     this.langService.onReload.subscribe(this.translate.bind(this))
   }

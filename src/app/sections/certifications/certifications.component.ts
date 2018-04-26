@@ -27,6 +27,7 @@ export class CertificationsComponent implements OnInit {
       courses: [
         'ASP.NET Core + Angular 2',
         'ASP.NET MVC 5 - Enterprise Applications',
+        'Modern Apps and Architectures. (MVC5, DDD, EF6, IoC, Domain Events)',
         'edX Azure Skills Toolkit'
       ]
     } as Certification

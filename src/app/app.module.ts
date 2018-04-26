@@ -1,22 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+import { Routes, RouterModule } from '@angular/router'
+import { HttpClient, HttpClientModule } from '@angular/common/http'
 
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core'
+import { TranslateHttpLoader } from '@ngx-translate/http-loader'
+import { HttpLoaderFactory } from './shared/functions/http-loader-factory'
 
-import { HttpLoaderFactory } from './shared/functions/http-loader-factory';
+import { AppComponent } from './app.component'
 
-import { AppComponent } from './app.component';
-
-import { SharedModule } from './shared/shared.module';
-import { SectionsModule } from './sections/sections.module';
-import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module'
+import { SectionsModule } from './sections/sections.module'
+import { CoreModule } from './core/core.module'
 
 const routes: Routes = [
   { path: '**', component: AppComponent }
-];
+]
 
 @NgModule({
   declarations: [

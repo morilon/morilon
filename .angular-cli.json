@@ -21,7 +21,6 @@
       "styles": [
         "../node_modules/startbootstrap-resume/vendor/bootstrap/css/bootstrap.min.css",
         "../node_modules/startbootstrap-resume/vendor/font-awesome/css/font-awesome.min.css",
-        "../node_modules/startbootstrap-resume/vendor/devicons/css/devicons.min.css",
         "../node_modules/startbootstrap-resume/vendor/simple-line-icons/css/simple-line-icons.css",
         "../node_modules/startbootstrap-resume/css/resume.min.css",
         "../node_modules/flag-icon-css/css/flag-icon.min.css",
@@ -30,8 +29,7 @@
       "scripts": [
         "../node_modules/startbootstrap-resume/vendor/jquery/jquery.min.js",
         "../node_modules/startbootstrap-resume/vendor/bootstrap/js/bootstrap.bundle.min.js",
-        "../node_modules/startbootstrap-resume/vendor/jquery-easing/jquery.easing.min.js",
-        "../node_modules/startbootstrap-resume/js/resume.min.js"
+        "../node_modules/startbootstrap-resume/vendor/jquery-easing/jquery.easing.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
