@@ -5,7 +5,10 @@
         "Education": "Formação",
         "Skills": "Habilidades",
         "Certifications": "Certificações",
-        "Interests": "Interesses",
-        "Test": "TESTES"
+        "Interests": "Interesses"
+    },
+    "About": {
+        "Country": "BRASIL",
+        "Description": "Sou desenvolvedor de software, tenho uns 5 anos de experiência desenvolvendo e implementando aplicações .NET e web apps modernas. Eu acredito que com o Scrum, podemos entregar uma solução mais valiosa para o cliente, ao invés de apenas linhas de código, que convenhamos, qualquer um pode escrever. Na real, o legal é ser capaz de entregar algo que eles consigam se identificar, não apenas softwware. Ser apaixonado pelo que faço me faz procurar sempre a excelência em tudo que desenvolvo."
     }
 }

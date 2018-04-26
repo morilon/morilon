@@ -5,7 +5,10 @@
         "Education": "Education",
         "Skills": "Skills",
         "Certifications": "Certifications",
-        "Interests": "Interests",
-        "Test": "Test"
+        "Interests": "Interests"
+    },
+    "About": {
+        "Country": "BRAZIL",
+        "Description": "I’m a software developer with over 5 years of experience developing and implementing .NET applications and modern web apps. I believe that through Scrum we are able to deliver a solution valuable to the client rather than lines of code, which, pretty much anyone can write. The real deal is being able to deliver something that they can relate to, not just software. Being passionate about what I do makes me pursuit excellence on everything I develop."
     }
 }

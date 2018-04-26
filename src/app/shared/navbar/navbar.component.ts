@@ -37,7 +37,7 @@ export class NavbarComponent implements OnInit {
   private translate(): void {
     this.langService
       .translate.get(this.navbar.getKeys())
-      .subscribe(val => this.navbar.items.forEach(i => i.text = val[i.key]));
+      .subscribe(val => this.navbar.items.forEach(t => t.text = val[t.key]));
   }
 
   reloadWith(lang: string): void {

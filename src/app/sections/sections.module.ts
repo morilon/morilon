@@ -5,8 +5,8 @@ import { AboutComponent } from './about/about.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
-import { AboutMeComponent } from './about-me/about-me.component';
 import { CertificationsComponent } from './certifications/certifications.component';
+import { InterestsComponent } from './interests/interests.component';
 
 @NgModule({
   imports: [
@@ -17,16 +17,16 @@ import { CertificationsComponent } from './certifications/certifications.compone
     ExperienceComponent,
     EducationComponent,
     SkillsComponent,
-    AboutMeComponent,
-    CertificationsComponent
+    CertificationsComponent,
+    InterestsComponent
   ],
   exports: [
     AboutComponent,
     ExperienceComponent,
     EducationComponent,
     SkillsComponent,
-    AboutMeComponent,
-    CertificationsComponent
+    CertificationsComponent,
+    InterestsComponent
   ]
 })
 export class SectionsModule { }

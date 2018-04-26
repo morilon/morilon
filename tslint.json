@@ -1,3 +1,8 @@
 {
+  "rules": {
+    "space-before-function-paren": [
+      false
+    ]
+  },
   "extends": "tslint-config-standard"
 }
