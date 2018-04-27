@@ -3,19 +3,16 @@ import { NgModule } from '@angular/core'
 import { Routes, RouterModule } from '@angular/router'
 import { HttpClient } from '@angular/common/http'
 
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core'
-import { TranslateHttpLoader } from '@ngx-translate/http-loader'
-import { HttpLoaderFactory } from './shared/functions/http-loader-factory'
-
 import { AppComponent } from './app.component'
+
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core'
+import { FileTranslateLoader } from './shared/loaders/file-translate-loader'
+
+import { AppRoutingModule } from './app-routing.module'
 
 import { SharedModule } from './shared/shared.module'
 import { SectionsModule } from './sections/sections.module'
 import { CoreModule } from './core/core.module'
-
-const routes: Routes = [
-  { path: '**', component: AppComponent }
-]
 
 @NgModule({
   declarations: [
@@ -26,11 +23,10 @@ const routes: Routes = [
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
+        useClass: FileTranslateLoader
       }
     }),
-    RouterModule.forRoot(routes, { useHash: false }),
+    AppRoutingModule,
     SectionsModule,
     CoreModule,
     SharedModule
