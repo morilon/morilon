@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
 
 import { Navbar } from '@models/navbar'
 
@@ -11,6 +11,10 @@ import { LanguageService } from '@services/language.service'
 })
 export class NavbarComponent implements OnInit {
   navbar: Navbar
+  flags = {
+    br: '/assets/images/flag-br.png',
+    us: '/assets/images/flag-us.png'
+  }
 
   constructor(
     private langService: LanguageService
@@ -18,7 +22,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     this.navbar = Navbar.create(
-      '/assets/images/batman.jpg',
+      '/assets/images/profile-batman.jpg',
       'Murilo Almeida',
       [
         { key: 'Navbar.About', uri: '#about' },

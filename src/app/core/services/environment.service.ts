@@ -1,13 +1,13 @@
-import { Injectable } from '@angular/core';
-import { environment } from '@env/environment';
-import { Environment } from '@models/environment';
+import { Injectable } from '@angular/core'
+import { environment } from '@env/environment'
+import { Environment } from '@models/environment'
 
 @Injectable()
 export class EnvironmentService {
-  properties: Environment;
+  properties: Environment
 
   constructor() {
-    this.properties = Environment.fromLocal(environment);
+    this.properties = Environment.fromLocal(environment)
   }
 
 }

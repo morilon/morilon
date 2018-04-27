@@ -21,8 +21,8 @@ export class CertificationsComponent implements OnInit {
   ngOnInit() {
     this.certification = {
       exams: [
-        Exam.create('http://www.mycertprofile.com/Profile/8786735631/86/2690', 'ms.png', 'MCSA - Microsoft® Certified Solutions Associate: Web Applications', 'G344-8436'),
-        Exam.create('http://www.mycertprofile.com/Profile/8786735631/12/1519', 'ms.png', 'MCP - Microsoft® Certified Professional', 'F599-4871')
+        Exam.create('http://www.mycertprofile.com/Profile/8786735631/86/2690', 'icon-ms.png', 'MCSA - Microsoft® Certified Solutions Associate: Web Applications', 'G344-8436'),
+        Exam.create('http://www.mycertprofile.com/Profile/8786735631/12/1519', 'icon-ms.png', 'MCP - Microsoft® Certified Professional', 'F599-4871')
       ],
       courses: [
         'ASP.NET Core + Angular 2',

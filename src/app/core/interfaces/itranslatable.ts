@@ -1,3 +1,3 @@
 export interface ITranslatable {
-    key: string;
+    key: string
 }
