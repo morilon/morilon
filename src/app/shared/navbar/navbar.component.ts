@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core'
 import { Navbar } from '@models/navbar'
 
 import { LanguageService } from '@services/language.service'
+import { EnvironmentService } from '@services/environment.service';
 
 @Component({
   selector: 'app-navbar',
@@ -17,12 +18,13 @@ export class NavbarComponent implements OnInit {
   }
 
   constructor(
+    private envService: EnvironmentService,
     private langService: LanguageService
   ) { }
 
   ngOnInit() {
     this.navbar = Navbar.create(
-      '/assets/images/profile-batman.jpg',
+      `/assets/images/profile-${this.getProfilePicture()}`,
       'Murilo Almeida',
       [
         { key: 'Navbar.About', uri: '#about' },
@@ -40,6 +42,18 @@ export class NavbarComponent implements OnInit {
 
   reloadWith(lang: string): void {
     this.langService.reload(lang)
+  }
+
+  private getProfilePicture(): string {
+    if (!this.envService.properties.production) return 'batman.jpg'
+
+    const time = new Date().getHours()
+
+    if (time > 8 && time <= 18) {
+      return 'why-so-serious.jpg'
+    } else {
+      return 'not-impressed.jpg'
+    }
   }
 
   private translate(): void {
