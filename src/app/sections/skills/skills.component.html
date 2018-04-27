@@ -6,7 +6,7 @@
       <div class="col-md-6 mb-2" *ngFor="let tech of skill.techs">
         <p class="skill-label">{{ tech.name }}</p>
         <div class="progress">
-          <div [ngStyle]="{ 'width.%': tech.level, 'background-color': tech.color }" class="progress-bar progress-bar-striped progress-bar-animated"
+          <div [ngStyle]="{ 'width.%': tech.level, 'background-color': tech.color }" class="progress-bar"
             [attr.aria-valuenow]="tech.level" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
       </div>
@@ -15,11 +15,11 @@
       <div class="col-md-12">
         <h4 class="mb-3"> {{ skill.help }} </h4>
         <div class="help progress">
-          <div [ngStyle]="{'background-color': getColor(20)}" class="progress-bar progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">{{ skill.levels[0] }}</div>
-          <div [ngStyle]="{'background-color': getColor(40)}" class="progress-bar progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">{{ skill.levels[1] }}</div>
-          <div [ngStyle]="{'background-color': getColor(60)}" class="progress-bar progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">{{ skill.levels[2] }}</div>
-          <div [ngStyle]="{'background-color': getColor(80)}" class="progress-bar progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">{{ skill.levels[3] }}</div>
-          <div [ngStyle]="{'background-color': getColor(100)}" class="progress-bar progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">{{ skill.levels[4] }}</div>
+          <div [ngStyle]="{'background-color': getColor(20)}" class="progress-bar " role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">{{ skill.levels[0] }}</div>
+          <div [ngStyle]="{'background-color': getColor(40)}" class="progress-bar " role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">{{ skill.levels[1] }}</div>
+          <div [ngStyle]="{'background-color': getColor(60)}" class="progress-bar " role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">{{ skill.levels[2] }}</div>
+          <div [ngStyle]="{'background-color': getColor(80)}" class="progress-bar " role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">{{ skill.levels[3] }}</div>
+          <div [ngStyle]="{'background-color': getColor(100)}" class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">{{ skill.levels[4] }}</div>
         </div>
       </div>
     </div>

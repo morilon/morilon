@@ -22,7 +22,9 @@
       "@models/*": ["app/core/models/*"],
       "@enums/*": ["app/core/enums/*"],
       "@services/*": ["app/core/services/*"],
-      "@interfaces/*": ["app/core/interfaces/*"]
+      "@interfaces/*": ["app/core/interfaces/*"],
+      "@loaders/*": ["app/core/loaders/*"],
+      "@i18n/*": ["assets/i18n/*"]
     }
   }
 }
