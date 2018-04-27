@@ -49,7 +49,14 @@
     },
     "Skills": {
         "Title": "Habilidades",
-        "Languages": "Linguagens de Programação",
-        "Tools": "Ferramentas"
+        "Subtitle": "Linguagens de Programação & Ferramentas",
+        "Legend": "Níveis de Proficiência",
+        "Levels": [
+            "Iniciante",
+            "Proficiente",
+            "Avançado",
+            "Master",
+            "Expert"
+        ]
     }
 }

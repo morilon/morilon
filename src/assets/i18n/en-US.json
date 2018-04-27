@@ -49,7 +49,14 @@
     },
     "Skills": {
         "Title": "Skills",
-        "Languages": "Programming Languages",
-        "Tools": "Tools"
+        "Subtitle": "Programming Languages & Tools",
+        "Legend": "Proficiency Levels",
+        "Levels": [
+            "Beginner",
+            "Proficient",
+            "Advanced",
+            "Master",
+            "Expert"
+        ]
     }
 }
