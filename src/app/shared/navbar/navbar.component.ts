@@ -13,8 +13,8 @@ import { EnvironmentService } from '@services/environment.service'
 export class NavbarComponent implements OnInit {
   navbar: Navbar
   flags = {
-    br: '/assets/images/flag-br.png',
-    us: '/assets/images/flag-us.png'
+    br: this.envService.images('flag-br.png'),
+    us: this.envService.images('flag-us.png')
   }
 
   constructor(
@@ -24,7 +24,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     this.navbar = Navbar.create(
-      `/assets/images/profile-${this.getProfilePicture()}`,
+      this.envService.images(this.getProfilePicture()),
       'Murilo Almeida',
       [
         { key: 'Navbar.About', uri: '#about' },
@@ -45,14 +45,15 @@ export class NavbarComponent implements OnInit {
   }
 
   private getProfilePicture(): string {
-    if (!this.envService.properties.production) return 'batman.jpg'
+    const prefix = 'profile-'
+    if (!this.envService.properties.production) return `${prefix}batman.jpg`
 
     const time = new Date().getHours()
 
     if (time > 8 && time <= 18) {
-      return 'why-so-serious.jpg'
+      return `${prefix}why-so-serious.jpg`
     } else {
-      return 'not-impressed.jpg'
+      return `${prefix}not-impressed.jpg`
     }
   }
 

@@ -7,7 +7,7 @@ export class Exam {
   static create(uri: string, logo: string, desc: string, license: string): Exam {
     const exam = new Exam()
     exam.uri = uri
-    exam.logo = `/assets/images/${logo}`
+    exam.logo = logo
     exam.description = desc
     exam.license = license
     return exam

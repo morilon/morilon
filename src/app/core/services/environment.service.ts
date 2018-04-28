@@ -10,4 +10,7 @@ export class EnvironmentService {
     this.properties = Environment.fromLocal(environment)
   }
 
+  images(file: string, dir: string = 'assets/images/'): string {
+    return `${this.properties.baseHref}${dir}${file}`
+  }
 }

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core'
-import { Certification } from '@models/certifications'
+
+import { EnvironmentService } from '@services/environment.service'
 import { LanguageService } from '@services/language.service'
+
+import { Certification } from '@models/certifications'
 import { Exam } from '@models/exam'
 
 @Component({
@@ -16,13 +19,15 @@ export class CertificationsComponent implements OnInit {
     examsTitle: 'Certifications.ExamsTitle'
   }
 
-  constructor(private langService: LanguageService) { }
+  constructor(
+    private envService: EnvironmentService,
+    private langService: LanguageService) { }
 
   ngOnInit() {
     this.certification = {
       exams: [
-        Exam.create('http://www.mycertprofile.com/Profile/8786735631/86/2690', 'icon-ms.png', 'MCSA - Microsoft® Certified Solutions Associate: Web Applications', 'G344-8436'),
-        Exam.create('http://www.mycertprofile.com/Profile/8786735631/12/1519', 'icon-ms.png', 'MCP - Microsoft® Certified Professional', 'F599-4871')
+        Exam.create('http://www.mycertprofile.com/Profile/8786735631/86/2690', this.envService.images('icon-ms.png'), 'MCSA - Microsoft® Certified Solutions Associate: Web Applications', 'G344-8436'),
+        Exam.create('http://www.mycertprofile.com/Profile/8786735631/12/1519', this.envService.images('icon-ms.png'), 'MCP - Microsoft® Certified Professional', 'F599-4871')
       ],
       courses: [
         'ASP.NET Core + Angular 2',

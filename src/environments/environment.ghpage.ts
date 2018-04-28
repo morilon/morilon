@@ -1,5 +1,5 @@
 export const environment = {
-  baseHref: '/',
+  baseHref: '/morilon/',
   production: true,
   defaultLang: 'en-US'
 }
