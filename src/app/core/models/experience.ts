@@ -1,11 +1,11 @@
 import { Job } from '@models/job'
 
 export class Experience {
-    title: string
-    jobTitle: string
-    jobs: Job[]
+  title: string
+  jobTitle: string
+  jobs: Job[]
 
-    constructor() {
-        this.jobs = []
-    }
+  constructor() {
+    this.jobs = []
+  }
 }

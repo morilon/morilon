@@ -1,4 +1,4 @@
 export class Interests {
-    title: string
-    lines: string[]
+  title: string
+  lines: string[]
 }

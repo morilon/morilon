@@ -8,7 +8,6 @@ import { Subject } from 'rxjs/Subject'
 export class LanguageService {
   translate: TranslateService
   onReload: Subject<any>
-  private onReload$: any
 
   private availableLangs = {
     ['pt']: 'pt-BR',
@@ -26,8 +25,6 @@ export class LanguageService {
 
   load() {
     this.onReload = new Subject()
-    this.onReload$ = this.onReload.asObservable()
-
     const current = this.getDefaultLang()
     this.translate.setDefaultLang(current)
     this.translate.use(current)

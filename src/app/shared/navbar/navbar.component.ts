@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core'
 import { Navbar } from '@models/navbar'
 
 import { LanguageService } from '@services/language.service'
-import { EnvironmentService } from '@services/environment.service';
+import { EnvironmentService } from '@services/environment.service'
 
 @Component({
   selector: 'app-navbar',

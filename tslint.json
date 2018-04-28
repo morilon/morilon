@@ -2,7 +2,8 @@
   "rules": {
     "space-before-function-paren": [
       false
-    ]
+    ],
+    "no-floating-promises": false
   },
   "extends": "tslint-config-standard"
 }

@@ -1,7 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
-import { Routes, RouterModule } from '@angular/router'
-import { HttpClient } from '@angular/common/http'
 
 import { AppComponent } from './app.component'
 

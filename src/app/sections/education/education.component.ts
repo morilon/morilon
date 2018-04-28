@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core'
 
 import { LanguageService } from '@services/language.service'
+import { Education } from '@models/education'
+import { Course } from '@models/course'
 
 @Component({
   selector: 'app-education',
@@ -33,28 +35,5 @@ export class EducationComponent implements OnInit {
           ]
         } as Education
       })
-  }
-}
-
-export class Education {
-  title: string
-  courses: Course[]
-
-  constructor() {
-    this.courses = []
-  }
-}
-
-export class Course {
-  schoolName: string
-  description: string
-  duration: string
-
-  static create(school: string, desc: string, duration: string): Course {
-    const c = new Course()
-    c.schoolName = school
-    c.description = desc
-    c.duration = duration
-    return c
   }
 }
