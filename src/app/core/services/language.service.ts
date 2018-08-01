@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core'
 
 import { EnvironmentService } from '@services/environment.service'
 import { TranslateService } from '@ngx-translate/core'
-import { Subject } from 'rxjs/Subject'
+import { Subject } from 'rxjs'
 
 @Injectable()
 export class LanguageService {
