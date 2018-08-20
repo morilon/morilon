@@ -8,6 +8,14 @@
       <a [href]="e.uri" target="_blank">{{ e.description }}</a>
     </p>
 
+    <h3 class="mb-3 mt-3">{{ certification.awardsTitle }}</h3>
+    <ul class="fa-ul mb-0">
+      <li *ngFor="let award of certification.awards">
+        <i class="fa-li fa fa-trophy"></i>
+        {{ award }}
+      </li>
+    </ul>
+
     <h3 class="mb-3 mt-3">{{ certification.examsTitle }}</h3>
     <ul class="fa-ul mb-0">
       <li *ngFor="let course of certification.courses">

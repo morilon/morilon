@@ -16,7 +16,9 @@ export class CertificationsComponent implements OnInit {
   private keys = {
     title: 'Certifications.Title',
     certsTitle: 'Certifications.CertsTitle',
-    examsTitle: 'Certifications.ExamsTitle'
+    examsTitle: 'Certifications.ExamsTitle',
+    awardsTitle: 'Certifications.AwardsTitle',
+    thirdPlace: 'Common.Abbreviations.Numbers.Third'
   }
 
   constructor(
@@ -32,8 +34,10 @@ export class CertificationsComponent implements OnInit {
       courses: [
         'ASP.NET Core + Angular 2',
         'ASP.NET MVC 5 - Enterprise Applications',
-        'Modern Apps and Architectures. (MVC5, DDD, EF6, IoC, Domain Events)',
-        'edX Azure Skills Toolkit'
+        'Modern Apps and Architectures. (MVC5, DDD, EF6, IoC, Domain Events)'
+      ],
+      awards: [
+        '3rd Place - Digital Transformation Labs - Microsoft/Netshoes - 2018'
       ]
     } as Certification
     this.translate()
@@ -41,11 +45,12 @@ export class CertificationsComponent implements OnInit {
   }
 
   translate(): void {
-    this.langService.translate.get([this.keys.title, this.keys.certsTitle, this.keys.examsTitle])
+    this.langService.translate.get([this.keys.title, this.keys.certsTitle, this.keys.examsTitle, this.keys.awardsTitle])
       .subscribe(val => {
         this.certification.title = val[this.keys.title]
         this.certification.certsTitle = val[this.keys.certsTitle]
         this.certification.examsTitle = val[this.keys.examsTitle]
+        this.certification.awardsTitle = val[this.keys.awardsTitle]
       })
   }
 }
