@@ -4,6 +4,7 @@ import { Navbar } from '@models/navbar'
 
 import { LanguageService } from '@services/language.service'
 import { EnvironmentService } from '@services/environment.service'
+import { environment } from 'environments/environment'
 
 @Component({
   selector: 'app-navbar',
@@ -45,8 +46,9 @@ export class NavbarComponent implements OnInit {
   }
 
   private getProfilePicture(): string {
+    console.log(this.envService.properties.production)
     const prefix = 'profile-'
-    if (!this.envService.properties.production) return `${prefix}batman.jpg`
+    if (!environment.production) return `${prefix}batman.jpg`
 
     const time = new Date().getHours()
 
