@@ -5,6 +5,7 @@ import { LanguageService } from '@services/language.service'
 
 import { Certification } from '@models/certifications'
 import { Exam } from '@models/exam'
+import { Award } from '@models/award'
 
 @Component({
   selector: 'app-certifications',
@@ -37,7 +38,7 @@ export class CertificationsComponent implements OnInit {
         'Modern Apps and Architectures. (MVC5, DDD, EF6, IoC, Domain Events)'
       ],
       awards: [
-        '3rd Place - Digital Transformation Labs - Microsoft/Netshoes - 2018'
+        Award.create('https://www.youtube.com/watch?v=3W-3YDWmKYg', '3rd Place - Digital Transformation Labs - Microsoft/Netshoes - 2018')
       ]
     } as Certification
     this.translate()

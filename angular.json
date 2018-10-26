@@ -30,7 +30,8 @@
             ],
             "scripts": [
               "./node_modules/startbootstrap-resume/vendor/jquery/jquery.min.js",
-              "./node_modules/startbootstrap-resume/vendor/bootstrap/js/bootstrap.bundle.min.js"
+              "./node_modules/startbootstrap-resume/vendor/bootstrap/js/bootstrap.bundle.min.js",
+              "./node_modules/jquery-easing/dist/jquery.easing.1.3.umd.js"
             ]
           },
           "configurations": {
