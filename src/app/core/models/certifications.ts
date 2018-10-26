@@ -1,4 +1,5 @@
-import { Exam } from '@models/exam'
+import { Exam } from './exam'
+import { Award } from './award'
 
 export class Certification {
   title: string
@@ -7,7 +8,7 @@ export class Certification {
   awardsTitle: string
   exams: Exam[]
   courses: string[]
-  awards: string[]
+  awards: Award[]
 
   constructor() {
     this.exams = []

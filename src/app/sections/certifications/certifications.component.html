@@ -10,9 +10,9 @@
 
     <h3 class="mb-3 mt-3">{{ certification.awardsTitle }}</h3>
     <ul class="fa-ul mb-0">
-      <li *ngFor="let award of certification.awards">
+      <li *ngFor="let a of certification.awards">
         <i class="fa-li fa fa-trophy"></i>
-        {{ award }}
+        <a [href]="a.uri" target="_blank">{{ a.description }}</a>
       </li>
     </ul>
 
