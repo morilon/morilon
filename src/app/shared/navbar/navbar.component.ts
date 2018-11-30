@@ -46,7 +46,6 @@ export class NavbarComponent implements OnInit {
   }
 
   private getProfilePicture(): string {
-    console.log(this.envService.properties.production)
     const prefix = 'profile-'
     if (!environment.production) return `${prefix}batman.jpg`
 
