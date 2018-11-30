@@ -6,6 +6,7 @@ import { Subject } from 'rxjs'
 
 @Injectable()
 export class LanguageService {
+  currentLang: string
   translate: TranslateService
   onReload: Subject<any>
 
@@ -28,9 +29,11 @@ export class LanguageService {
     const current = this.getDefaultLang()
     this.translate.setDefaultLang(current)
     this.translate.use(current)
+    this.currentLang = current
   }
 
   reload(lang: string): void {
+    this.currentLang = lang
     this.translate.use(lang)
     this.onReload.next()
   }

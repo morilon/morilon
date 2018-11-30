@@ -11,11 +11,11 @@
       {{ about.description }}
     </p>
     <ul class="list-inline list-social-icons mb-0">
-        <li class="list-inline-item">
-            <a href="/assets/files/cv-muriloalmeida.pdf" target="_blank">
-                <img class="pdf-download" src="/assets/images/pdf.png" alt="download the pdf.">
-            </a>
-          </li>
+      <li class="list-inline-item">
+        <a [href]="about.cvUrl" target="_blank">
+          <img class="pdf-download" src="/assets/images/pdf.png" alt="download the pdf.">
+        </a>
+      </li>
       <li class="list-inline-item" *ngFor="let social of about.socialMedia">
         <a [href]="social.uri" target="_blank">
           <span class="fa-stack fa-lg">

@@ -8,6 +8,7 @@ export class About {
   contact: string
   description: string
   socialMedia: SocialMedia[]
+  cvUrl: string
 
   constructor() {
     this.socialMedia = []
