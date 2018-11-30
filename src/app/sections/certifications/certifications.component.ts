@@ -33,6 +33,7 @@ export class CertificationsComponent implements OnInit {
         Exam.create('http://www.mycertprofile.com/Profile/8786735631/12/1519', this.envService.images('icon-ms.png'), 'MCP - Microsoft® Certified Professional', 'F599-4871')
       ],
       courses: [
+        'Professional Scrum Master™ by Scrum.org',
         'ASP.NET Core + Angular 2',
         'ASP.NET MVC 5 - Enterprise Applications',
         'Modern Apps and Architectures. (MVC5, DDD, EF6, IoC, Domain Events)'

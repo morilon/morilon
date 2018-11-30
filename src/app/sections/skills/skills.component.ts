@@ -60,25 +60,25 @@ export class SkillsComponent implements OnInit {
           levels: val[this.keys.levels],
           techs: [
             Technology.create('.NET /.NET Core / CSharp (C#)', Proficiency.Master),
-            Technology.create('Cloud (Azure)', Proficiency.Advanced),
-            Technology.create('HTML5', Proficiency.Master),
-            Technology.create('CSS3', Proficiency.Advanced),
+            Technology.create('Azure Cloud', Proficiency.Advanced),
+            Technology.create('HTML5/CSS3', Proficiency.Master),
             Technology.create('GIT/TFS', Proficiency.Advanced),
-            Technology.create('Angularjs', Proficiency.Proficient),
-            Technology.create('Angular', Proficiency.Advanced),
-            Technology.create('Javascript', Proficiency.Advanced),
+            Technology.create('Angular/Angularjs', Proficiency.Proficient),
+            Technology.create('Javascript', Proficiency.Proficient),
             Technology.create('Typescript', Proficiency.Advanced),
-            Technology.create('SQL Server', Proficiency.Master),
-            Technology.create('NoSQL', Proficiency.Advanced),
-            Technology.create('ORM (Entity Framework / Dapper)', Proficiency.Master),
+            Technology.create('MSSQL / MySQL / PostgreeSQL / Oracle', Proficiency.Advanced),
+            Technology.create('NoSQL (MongoDB, Azure)', Proficiency.Advanced),
+            Technology.create('ORM/Micro ORM (Entity Framework & Core / Dapper)', Proficiency.Master),
             Technology.create('Docker', Proficiency.Beginner),
-            Technology.create('Java', Proficiency.Beginner),
-            Technology.create('Ruby', Proficiency.Beginner),
             Technology.create('Xamarin', Proficiency.Proficient),
             Technology.create('CI/CD (Jenkins, VSTS)', Proficiency.Proficient),
             Technology.create('REST / SOAP', Proficiency.Master),
             Technology.create('Agile / Scrum', Proficiency.Master),
-            Technology.create('SOLID / KISS', Proficiency.Master)
+            Technology.create('SOLID / KISS', Proficiency.Master),
+            Technology.create('TDD / BDD', Proficiency.Advanced),
+            Technology.create('Java', Proficiency.Proficient),
+            Technology.create('Ruby', Proficiency.Beginner),
+            Technology.create('NodeJS', Proficiency.Beginner)
           ]
         } as Skill
       })
