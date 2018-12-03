@@ -4,8 +4,11 @@
 
     <h3 class="mb-3">{{ certification.certsTitle }}</h3>
     <p class="p-fa-ul" *ngFor="let e of certification.exams">
-      <img [src]="e.logo" [alt]="e.logo">
-      <a [href]="e.uri" target="_blank">{{ e.description }}</a>
+      <img *ngIf="e.logo; else certIcon" [src]="e.logo" [alt]="e.logo">
+      <ng-template #certIcon>
+        <i class="fa fa-certificate"></i>
+      </ng-template>
+      <a [href]="e.uri" target="_blank"> {{ e.description }}</a>
     </p>
 
     <h3 class="mb-3 mt-3">{{ certification.awardsTitle }}</h3>
