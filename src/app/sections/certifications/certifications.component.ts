@@ -31,7 +31,8 @@ export class CertificationsComponent implements OnInit {
       exams: [
         Exam.create('http://www.mycertprofile.com/Profile/8786735631/86/2690', this.envService.images('icon-ms.png'), 'MCSA - Microsoft® Certified Solutions Associate: Web Applications', 'G344-8436'),
         Exam.create('http://www.mycertprofile.com/Profile/8786735631/12/1519', this.envService.images('icon-ms.png'), 'MCP - Microsoft® Certified Professional', 'F599-4871'),
-        Exam.create('https://www.efset.org/cert/PvdiWh', null, 'EF Test 76/100 (C2 Proficient)', null)
+        Exam.create('https://www.efset.org/cert/PvdiWh', this.envService.images('icon-efset.png'), 'EF SET English Certificate 76/100 (C2 Proficient)', null),
+        Exam.create('https://www.scrum.org/user/343801', this.envService.images('icon-psm.png'), 'Professional Scrum Master I', null)
       ],
       courses: [
         'Professional Scrum Master™ by Scrum.org',
