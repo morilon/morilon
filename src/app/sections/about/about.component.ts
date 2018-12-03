@@ -19,11 +19,8 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
     this.about = new About()
     this.translate()
-    this.langService.onReload.subscribe(() => {
-      console.log(this.langService.currentLang)
-      this.translate.bind(this)
-      this.about.cvUrl = `/assets/files/cv-${this.langService.currentLang}.pdf`
-    })
+    this.langService.onReload.subscribe(this.translate.bind(this))
+    this.about.cvUrl = `/assets/files/cv-${this.langService.currentLang}.pdf`
   }
 
   translate(): void {
